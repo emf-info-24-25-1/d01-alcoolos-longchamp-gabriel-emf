@@ -1,17 +1,29 @@
 package app;
 
 public class Application {
-    
-        //
-        //              )        (                 ) (           (         (
-        //           ( /(   *   ))\ )        (  ( /( )\ )        )\ )  (   )\ )
-        //     (   ( )\())` )  /(()/((       )\ )\()|()/(  (    (()/(  )\ (()/(
-        //     )\  )((_)\  ( )(_))(_))\    (((_|(_)\ /(_)) )\    /(_)|((_) /(_))
-        //    ((_)((_)((_)(_(_()|_))((_)   )\___ ((_|_))_ ((_)  (_)) )\___(_))
-        //    __   _____ _____ ___ ___    ___ ___  ___  ___   ___ ___ ___   _
-        //    \ \ / / _ \_   _| _ \ __|  / __/ _ \|   \| __| |_ _/ __|_ _| | |
-        //     \ V / (_) || | |   / _|  | (_| (_) | |) | _|   | | (__ | |  |_|
-        //      \_/ \___/ |_| |_|_\___|  \___\___/|___/|___| |___\___|___| (_)
-        //
+    public static void main(String[] args) {
+        Ami ami1 = new Ami("Luc", 5);
+        Ami ami2 = new Ami("Marie", 3);
+        Ami ami3 = new Ami("Paul", 2);
 
+       
+        System.out.println(ami1.getNom() + " peut encore boire " + ami1.getBieresRestantes() + " bières.");
+        System.out.println(ami2.getNom() + " peut encore boire " + ami2.getBieresRestantes() + " bières.");
+        System.out.println(ami3.getNom() + " peut encore boire " + ami3.getBieresRestantes() + " bières.");
+
+       
+        ami1.boitUneBiere();
+        ami2.boitUneBiere();
+        ami3.boitUneBiere();
+        ami3.boitUneBiere();
+        ami3.boitUneBiere(); 
+        
+        System.out.println(ami1.getNom() + " peut encore boire " + ami1.getBieresRestantes() + " bières.");
+        System.out.println(ami2.getNom() + " peut encore boire " + ami2.getBieresRestantes() + " bières.");
+        System.out.println(ami3.getNom() + " peut encore boire " + ami3.getBieresRestantes() + " bières.");
+    }
 }
+
+
+
+
